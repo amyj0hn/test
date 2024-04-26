@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: black;
+    --secondary: rgb(255, 255, 255);
+    --alternative: #139D28;
+    --awesome: hsl(121, 65%, 48%);
+    --mainBoxShadow: .5vw .5vw .3vw var(--alternative),
+    .8vw 1vw .2vw var(--secondary),
+    1vw 1vw .2vw rgb(130, 108, 108);
+    --borderColor: #13C368;
+    --elementShadow: .2vw .3vw .2vw rgb(130, 108, 108);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 20rem;
+    aspect-ratio: 2 / 3;
+    box-shadow: var(--mainBoxShadow);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, ) ;
+}
